@@ -1,0 +1,2 @@
+[07-Sep-2012 23:01:21] PHP Fatal error:  Cannot use object of type WP_Error as array in /home/network/public_html/wp-content/plugins/worker/init.php on line 414
+[12-Sep-2012 21:00:07] PHP Fatal error:  Cannot use object of type WP_Error as array in /home/network/public_html/wp-content/plugins/worker/init.php on line 414

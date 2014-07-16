@@ -1,0 +1,1 @@
+[11-May-2012 08:28:29] PHP Fatal error:  Cannot redeclare contact_form_parse() (previously declared in /home/network/public_html/wp-content/themes/Karma/truethemes_framework/truethemes/contact-form/truethemes-contact-form.php:26) in /home/network/public_html/wp-content/plugins/jetpack/modules/contact-form/grunion-contact-form.php on line 47

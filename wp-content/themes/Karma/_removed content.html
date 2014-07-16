@@ -1,0 +1,20 @@
+<!--template_rightnav_sidebar.php-->
+<div class="post_footer">
+
+<?php truethemes_begin_post_footer_hook();// action hook, see truethemes_framework/global/hooks.php ?>
+
+<div class="post_cats"><p><span><?php _e('Categories:', 'truethemes_localize') ?></span> <?php the_category(', '); ?></p></div><!-- end post_cats -->
+
+<?php if (get_the_tags()) : ?>
+<div class="post_tags"><p><span><?php _e('Tags:', 'truethemes_localize') ?></span>  <?php the_tags('', ', '); ?></p></div><!-- end post_tags -->
+<?php endif; ?>
+
+<?php truethemes_end_post_footer_hook();// action hook, see truethemes_framework/global/hooks.php ?>
+
+</div><!-- end post_footer -->
+
+
+<!-- theme-template-part-content-blog.php-->
+<div class="post_comments">
+	<a href="<?php echo the_permalink().'#post-comments'; ?>"><span><?php comments_number('0', '1', '%'); ?></span></a>
+</div><!-- end post_comments -->

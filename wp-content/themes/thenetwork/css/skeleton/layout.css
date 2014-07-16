@@ -1,0 +1,615 @@
+/*
+* Edroma
+* 2014, Piotr Kananowicz
+* 07/07/2014
+*/
+
+/*
+Table of Content:
+1. Main Style
+2. Header
+3. Intro
+4. Features
+5. Tour
+6. Pricing
+7. FAQ
+8. Clients
+9. Footer
+10. Media Queries
+11. Font-Face
+*/
+
+/*Main Style*/
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #5A5A5A;
+}
+
+a {
+	font-family: 'Raleway';
+}
+
+p {
+	font-weight: 400;
+	font-family: 'open sans';
+	color: #5A5A5A;
+}
+
+p.lead {
+	font-size: 16px;
+	line-height: 24px;
+	color: #777;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #494949;
+}
+
+h1  {
+	font-size:36px;
+	line-height:1.1613em;
+}
+
+h2  {
+	font-size:24px;
+	line-height:1.3846em;
+}
+
+h3  { 
+	font-size:20px;
+	line-height:1.8em;
+}
+
+h4  {
+	font-size:18px;
+	line-height:1.4em;
+}
+
+h5  {
+	font-size:17px;
+	line-height:1.5em;
+	margin: 5px 0;
+}
+
+h6  {
+	font-size:11px;
+	line-height:1.6364em;
+}
+
+.preamble {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*Header*/
+
+header {
+	padding: 22px 0;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	z-index: 999;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+header img {
+	vertical-align: middle;
+}
+
+header .logo {
+	float: left;
+}
+
+header .logo p {
+	display: inline-block;
+}
+
+header nav ul {
+	float: right;
+	margin: 0;
+}
+
+header nav ul li {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+header nav ul li a {
+	text-decoration: none !important;
+	color: #5A5A5A;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 0;
+	-webkit-transition: 0.1s ease-in;
+	-o-transition: 0.1s ease-in;
+	transition: 0.1s ease-in;
+}
+
+header nav ul li a:hover {
+	color: #C23322;
+	-webkit-transition: 0.1s ease-in;
+	-o-transition: 0.1s ease-in;
+	transition: 0.1s ease-in;
+}
+
+header select {
+	display: none;
+}
+
+#toggle, .menu ul ul, .toggle {
+	display: none;
+}
+
+/*Intro*/
+
+#intro {
+	background: url(../images/yourbg.jpg) no-repeat center fixed;
+	background-size: cover;
+	padding: 120px 0 50px 0;
+	background-color: #414141;
+}
+
+.main-text h1 {
+	color: #fff;
+	font-size: 38px;
+	line-height: 46px;
+	text-shadow: 0 1px #414141;
+}
+
+.main-text p.lead {
+	color: #fff;
+}
+
+.main-text li h5,
+.main-text li p {
+	color: #fff;
+}
+
+.main-text li p {
+	padding: 0 0 0 28px;
+}
+
+.main-text li h5 {
+	display: inline-block;
+}
+
+.main-text li i {
+	color: #fff;
+	font-size: 18px;
+	margin: 0 5px 0 0;
+}
+
+.box {
+	background: rgba(0,0,0,0.7);
+	padding: 15px 20px;
+	width: 320px;
+	float: right;
+}
+
+.box h2 {
+	color: #fff;
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+
+.box p {
+	color: #fff;
+	text-align: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+	box-sizing: border-box;
+	width: 100% !important;
+	border-radius: 0 !important;
+	padding: 7px;
+	border: none;
+	font-family: 'open sans';
+}
+
+#intro button.submit {
+	border: none;
+	border-radius: 0;
+	background: #C23322;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: white;
+	text-shadow: none;
+	padding: 12px 16px;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	display: block;
+	font-family: 'Raleway';
+	font-weight: 400;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+#intro button.submit:hover {
+	background: #AA291A;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+/*Features*/
+
+#features {
+	padding: 50px 0 30px 0;
+	display: inline-block;
+}
+
+#features .row {
+	margin: 0 0 30px 0;
+}
+
+.feature i {
+	background: #f7f7f7;
+	border-radius: 50%;
+	float: left;
+	font-size: 18px;
+	height: 49px;
+	width: 49px;
+	margin: 5px 0 0 0;
+	line-height: 49px;
+	text-align: center;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+.feature:hover i {
+	background: #C23322;
+	color: white;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+.feature p {
+	margin: 0 0 20px 65px;
+}
+
+.feature h5 {
+	margin: 0 0 5px 65px;
+}
+
+/*Tour*/
+
+.grid {
+	padding: 50px 0;
+	display: inline-block;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid ul.list-features li {
+	font-family: 'open sans';
+}
+
+.grid ul.list-features li i {
+	margin: 0 5px 0 0;
+	color: #C23322;
+}
+
+.grid blockquote p.who {
+	display: inline-block;
+	margin: 0;
+	font-style: normal;
+	color: #414141;
+	margin-left: 10px;
+}
+
+/*Pricing*/
+
+#pricing {
+	padding: 50px 0;
+	display: inline-block;
+}
+
+#pricing .preamble {
+	margin-bottom: 45px;
+}
+
+.pt {
+	border: 1px solid #e0e0e0;
+	text-align: center;
+}
+
+.pt.popular {
+	margin: -20px 0 0 0;
+}
+
+.pt.popular .pricing_header {
+	padding: 25px 0;
+}
+
+.pt.popular .price-button {
+	padding: 10px 0 25px 0;
+}
+
+.pricing_header {
+	padding: 15px 0;
+}
+
+.pricing_header h5 {
+	margin: 0;
+}
+
+.costs {
+	background: #f7f7f7;
+	border: 1px solid #e0e0e0;
+	border-width: 1px 0 1px 0;
+}
+
+.costs h5 {
+	display: inline-block;
+	font-size: 56px;
+	margin: 0;
+	line-height: 78px;
+}
+
+.costs span {
+	line-height: 72px;
+	vertical-align: top;
+	font-size: 20px;
+	color: #777;
+	font-weight: bold;
+}
+
+.pt ul {
+	margin: 0;
+	padding: 20px 0;
+}
+
+.pt ul li:last-child {
+	margin-bottom: 0;
+}
+
+.price-button {
+	padding: 0 0 20px 0;
+}
+
+.price-button a.btn {
+	border: none;
+	border-radius: 0;
+	background: #C23322;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: white;
+	text-shadow: none;
+	padding: 8px 16px;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	display: inline-block;
+	font-family: 'Raleway';
+	font-weight: 400;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+.price-button a.btn:hover {
+	background: #AA291A;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+/*FAQ*/
+
+#faq {
+	padding: 50px 0 30px 0;
+	display: inline-block;
+}
+
+#faq h5 {
+	margin: 5px 0;
+}
+
+/*Clients*/
+
+#clients {
+	padding: 50px 0;
+	display: inline-block;
+}
+
+#clients .logo {
+	text-align: center;
+}
+
+/*Footer*/
+
+footer#footer {
+	padding: 22px 0;
+	background: #f7f7f7;
+	border-top: 1px solid #e0e0e0;
+}
+
+footer#footer .copyrights p {
+	margin: 0;
+	font-size: 13px;
+	line-height: 31px;
+}
+
+footer#footer .social p {
+	float: right;
+	margin: 0;
+}
+
+footer#footer .social p a {
+	float: left;
+	margin: 0;
+}
+
+footer#footer .social p a i {
+	font-size: 12px;
+	color: #5A5A5A;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+footer#footer .social p a:hover i {
+	color: #C23322;
+	-webkit-transition: 0.2s ease-in;
+	-o-transition: 0.2s ease-in;
+	transition: 0.2s ease-in;
+}
+
+footer#footer .social p a {
+	border-radius: 50%;
+	border: 2px solid #494949;
+	text-align: center;
+	padding: 2px 5px;
+	display: inline-block;
+	width: 15px;
+	margin-left: 10px;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+		header nav {
+			display: none;
+		}
+
+		header nav ul {
+			display: block;
+			width: 100%;
+			margin: 20px 0 0 0;
+			box-sizing: border-box;
+		}
+
+		header nav ul li {
+			display: block;
+			float: none;
+			margin: 0 0 15px 0;
+		}
+
+		header nav ul li:last-child {
+			margin: 0;
+		}
+
+		header nav.opened{
+			display: block;
+			opacity: 1;
+			-webkit-transition: 0.2s ease-in;
+			-o-transition: 0.2s ease-in;
+			transition: 0.2s ease-in;
+		}
+
+		#toggle {
+			position: relative;
+			display: block !important;
+			float: right;
+			cursor: pointer;
+			color: #414141;
+			font-family: 'FontAwesome';
+			font-size: 18px;
+			height: 20px;
+			width: 20px;
+			text-align: center;
+		}
+
+		#toggle:after {
+			content:'\f0c9';
+		}
+
+		#toggle.toggled:after {
+			content:'\f077'
+		}
+	
+		.box {
+			width: 100%;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+
+		.pt.popular {
+			margin: 30px 0 !important;
+		}
+
+		#clients .logo img {
+			width: 45%;
+			margin: 0 0 20px 0;
+		}
+
+		footer#footer {
+			text-align: center;
+		}
+
+		footer#footer .social p {
+			float: none;
+			display: table;
+			margin: 10px auto 10px auto;
+		}
+
+
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
